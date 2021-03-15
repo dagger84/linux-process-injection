@@ -8,7 +8,7 @@ There are two ways to start debugging a process:
 
 ## Project organization
 
-```console
+```
 .
 ├── inject.c
 ├── README.md
@@ -17,7 +17,7 @@ There are two ways to start debugging a process:
 
 ## Run
 
-```console
+```
 # compile shellcode
 nasm -f elf64 -o shellcode.o shellcode.asm
 
