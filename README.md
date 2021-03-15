@@ -35,5 +35,7 @@ nasm -f elf64 -o shellcode.o shellcode.asm
 - [Linux: Infecting running processes](https://0x00sec.org/t/linux-infecting-running-processes/1097)
 
 ## To read
+- [Phrack: Building ptrace injecting shellcodes (that don't crash the process)](http://phrack.org/issues/59/12.html)
 - [Linux process injection into sshd for fun](https://blog.xpnsec.com/linux-process-injection-aka-injecting-into-sshd-for-fun/)
   - [`xpn/ssh-inject` source code](https://github.com/xpn/ssh-inject)
+- [sshd injection and password harvesting, alternative method](https://jm33.me/sshd-injection-and-password-harvesting.html)
