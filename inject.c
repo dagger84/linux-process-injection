@@ -11,7 +11,7 @@
 #include <sys/user.h>
 #include <sys/reg.h>
 
-#define SHELLCODE_SIZE 26
+#define SHELLCODE_SIZE 27
 
 // - 32 byte shellcode, sourced from others
 // unsigned char *shellcode = 
@@ -91,7 +91,7 @@ int main(int argc, char *argv[]) {
 
   printf("+ Injecting shellcode at %p\n", (void*) regs.rip);
   inject_data(target, shellcode, (void*) regs.rip, SHELLCODE_SIZE);
-  // Shifting the RIP register wasn't necessary with the 26 byte shellcode.
+  // Shifting the RIP register wasn't necessary with the 27 byte shellcode.
   // regs.rip += 2;
 
   printf("+ Setting instruction pointer to %p\n", (void*) regs.rip);
